@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - IT</title>
+    <style>
+        /* CSS: Phần trang trí cho CV */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #e9ecef; /* Màu nền xám nhạt */
+            color: #333; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 10px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        }
+
+        header { 
+            text-align: center; 
+            border-bottom: 3px solid #2c3e50; 
+            padding-bottom: 20px; 
+            margin-bottom: 30px; 
+        }
+
+        h1 { 
+            margin: 0; 
+            color: #2c3e50; 
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .contact-info { 
+            margin-top: 15px; 
+            font-size: 0.95em; 
+            color: #555; 
+        }
+
+        .section-title { 
+            color: #2980b9; 
+            border-left: 4px solid #2980b9; 
+            padding-left: 10px; 
+            margin-top: 30px; 
+            text-transform: uppercase;
+        }
+
+        /* Định dạng danh sách dạng lưới (Flexbox) */
+        .skills-list, .hobbies-list { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 12px; 
+            list-style: none; 
+            padding: 0; 
+        }
+
+        .skills-list li { 
+            background: #34495e; 
+            color: white;
+            padding: 8px 18px; 
+            border-radius: 25px; 
+            font-size: 0.9em; 
+            font-weight: bold;
+        }
+
+        .hobbies-list li {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 8px 18px; 
+            border-radius: 25px; 
+            font-size: 0.9em; 
+            border: 1px solid #bdc3c7;
+        }
+
+        .project-item { 
+            margin-bottom: 20px; 
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 3px solid #27ae60;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .project-title { 
+            font-weight: bold; 
+            font-size: 1.1em;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>[PHAN TUẤN EM]</h1>
+            <div class="subtitle">Sinh viên Công nghệ Thông tin</div>
+            <div class="contact-info">
+                 Bạc Liêu, Việt Nam |  email: em@gmail.com | SĐT: 0922222294
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title"> Học vấn </h2>
+            <p><strong>Đại học Văn Lang</strong><br>
+            Chuyên ngành: Công nghệ Thông tin (IT)</p>
+        </section>
+
+        <section>
+            <h2 class="section-title"> Kỹ năng chuyên môn</h2>
+            <ul class="skills-list">
+                <li>HTML / CSS / JavaScript</li>
+                <li>Lập trình Java (OOP)</li>
+                <li>Docker & Microservices</li>
+                <li>Cloud Computing (GCP, Azure)</li>
+                <li>Network Security & Cybersecurity</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title"> Dự án tiêu biểu </h2>
+            <div class="project-item">
+                <div class="project-title">Food Journeys (Web Project)</div>
+                <p>Nghiên cứu và phát triển giao diện website với chủ đề hành trình khám phá ẩm thực quốc tế. Áp dụng các kiến thức HTML/CSS và thiết kế layout cơ bản để xây dựng trải nghiệm người dùng.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"> Sở thích cá nhân</h2>
+            <ul class="hobbies-list">
+                <li> ăn đc thì ăn</li>
+                <li>Gaming </li>
+                <li>Boxing </li>
+                <li>Tìm hiểu Pokémon </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
