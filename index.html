@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Cá Nhân - IT</title>
     <style>
-        /* CSS: Phần trang trí cho CV */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #e9ecef; /* Màu nền xám nhạt */
+            background-color: #e9ecef; 
             color: #333; 
             line-height: 1.6; 
             margin: 0; 
@@ -29,6 +28,17 @@
             border-bottom: 3px solid #2c3e50; 
             padding-bottom: 20px; 
             margin-bottom: 30px; 
+        }
+
+        /* --- CSS CHO ẢNH ĐẠI DIỆN --- */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Làm ảnh tròn */
+            object-fit: cover;
+            border: 4px solid #2980b9;
+            display: block;
+            margin: 0 auto 20px auto; /* Căn giữa và cách chữ bên dưới 20px */
         }
 
         h1 { 
@@ -60,7 +70,6 @@
             text-transform: uppercase;
         }
 
-        /* Định dạng danh sách dạng lưới (Flexbox) */
         .skills-list, .hobbies-list { 
             display: flex; 
             flex-wrap: wrap; 
@@ -106,6 +115,8 @@
 
     <div class="container">
         <header>
+            <img src="me.jpg" alt="Ảnh đại diện" class="profile-img">
+            
             <h1>[PHAN TUẤN EM]</h1>
             <div class="subtitle">Sinh viên Công nghệ Thông tin</div>
             <div class="contact-info">
@@ -134,17 +145,17 @@
             <h2 class="section-title"> Dự án tiêu biểu </h2>
             <div class="project-item">
                 <div class="project-title">Food Journeys (Web Project)</div>
-                <p>Nghiên cứu và phát triển giao diện website với chủ đề hành trình khám phá ẩm thực quốc tế. Áp dụng các kiến thức HTML/CSS và thiết kế layout cơ bản để xây dựng trải nghiệm người dùng.</p>
+                <p>Phát triển giao diện website khám phá ẩm thực. Áp dụng HTML/CSS để xây dựng trải nghiệm người dùng.</p>
             </div>
         </section>
 
         <section>
             <h2 class="section-title"> Sở thích cá nhân</h2>
             <ul class="hobbies-list">
-                <li> ăn đc thì ăn</li>
-                <li>Gaming </li>
-                <li>Boxing </li>
-                <li>Tìm hiểu Pokémon </li>
+                <li>Ăn được thì ăn</li>
+                <li>Gaming</li>
+                <li>Boxing</li>
+                <li>Tìm hiểu Pokémon</li>
             </ul>
         </section>
     </div>
