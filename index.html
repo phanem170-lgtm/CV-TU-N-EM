@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Cá Nhân - IT</title>
+    <title>CV Cá Nhân - Phan Tuấn Em</title>
     <style>
+        /* CSS: Trang trí tổng thể */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #e9ecef; 
+            background-color: #f4f7f6; 
             color: #333; 
             line-height: 1.6; 
             margin: 0; 
@@ -20,94 +21,93 @@
             background: #ffffff; 
             padding: 40px; 
             border-radius: 10px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
         }
 
         header { 
             text-align: center; 
             border-bottom: 3px solid #2c3e50; 
-            padding-bottom: 20px; 
+            padding-bottom: 25px; 
             margin-bottom: 30px; 
         }
 
-        /* --- CSS CHO ẢNH ĐẠI DIỆN --- */
+        /* Ảnh đại diện */
         .profile-img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Làm ảnh tròn */
+            border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #2980b9;
-            display: block;
-            margin: 0 auto 20px auto; /* Căn giữa và cách chữ bên dưới 20px */
+            border: 5px solid #2980b9;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         h1 { 
-            margin: 0; 
+            margin: 10px 0 0 0; 
             color: #2c3e50; 
-            font-size: 2.5em;
+            font-size: 2.2em;
             text-transform: uppercase;
-            letter-spacing: 2px;
         }
 
         .subtitle {
-            font-size: 1.2em;
+            font-size: 1.1em;
             color: #7f8c8d;
-            margin-top: 5px;
             font-weight: bold;
         }
 
         .contact-info { 
-            margin-top: 15px; 
-            font-size: 0.95em; 
+            margin-top: 10px; 
+            font-size: 0.9em; 
             color: #555; 
         }
 
         .section-title { 
             color: #2980b9; 
-            border-left: 4px solid #2980b9; 
-            padding-left: 10px; 
-            margin-top: 30px; 
+            border-left: 5px solid #2980b9; 
+            padding-left: 15px; 
+            margin-top: 35px; 
             text-transform: uppercase;
+            font-size: 1.3em;
         }
 
         .skills-list, .hobbies-list { 
             display: flex; 
             flex-wrap: wrap; 
-            gap: 12px; 
+            gap: 10px; 
             list-style: none; 
             padding: 0; 
+            margin-top: 15px;
         }
 
         .skills-list li { 
             background: #34495e; 
             color: white;
-            padding: 8px 18px; 
-            border-radius: 25px; 
-            font-size: 0.9em; 
-            font-weight: bold;
+            padding: 6px 15px; 
+            border-radius: 20px; 
+            font-size: 0.85em; 
         }
 
         .hobbies-list li {
             background: #ecf0f1;
             color: #2c3e50;
-            padding: 8px 18px; 
-            border-radius: 25px; 
-            font-size: 0.9em; 
-            border: 1px solid #bdc3c7;
+            padding: 6px 15px; 
+            border-radius: 20px; 
+            font-size: 0.85em; 
+            border: 1px solid #dcdde1;
         }
 
         .project-item { 
-            margin-bottom: 20px; 
-            background: #f8f9fa;
-            padding: 15px;
-            border-left: 3px solid #27ae60;
-            border-radius: 0 5px 5px 0;
+            margin-top: 15px;
+            background: #fafafa;
+            padding: 20px;
+            border-left: 4px solid #27ae60;
+            border-radius: 4px;
         }
 
         .project-title { 
             font-weight: bold; 
-            font-size: 1.1em;
             color: #27ae60;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -115,23 +115,22 @@
 
     <div class="container">
         <header>
-            <img src="me.jpg" alt="Ảnh đại diện" class="profile-img">
-            
-            <h1>[PHAN TUẤN EM]</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" alt="Ảnh đại diện" class="profile-img">
+            <h1>PHAN TUẤN EM</h1>
             <div class="subtitle">Sinh viên Công nghệ Thông tin</div>
             <div class="contact-info">
-                 Bạc Liêu, Việt Nam |  email: em@gmail.com | SĐT: 0922222294
+                 Bạc Liêu, Việt Nam | Email: em@gmail.com | SĐT: 0922222294
             </div>
         </header>
 
         <section>
-            <h2 class="section-title"> Học vấn </h2>
+            <h2 class="section-title">Học vấn</h2>
             <p><strong>Đại học Văn Lang</strong><br>
             Chuyên ngành: Công nghệ Thông tin (IT)</p>
         </section>
 
         <section>
-            <h2 class="section-title"> Kỹ năng chuyên môn</h2>
+            <h2 class="section-title">Kỹ năng chuyên môn</h2>
             <ul class="skills-list">
                 <li>HTML / CSS / JavaScript</li>
                 <li>Lập trình Java (OOP)</li>
@@ -142,20 +141,20 @@
         </section>
 
         <section>
-            <h2 class="section-title"> Dự án tiêu biểu </h2>
+            <h2 class="section-title">Dự án tiêu biểu</h2>
             <div class="project-item">
                 <div class="project-title">Food Journeys (Web Project)</div>
-                <p>Phát triển giao diện website khám phá ẩm thực. Áp dụng HTML/CSS để xây dựng trải nghiệm người dùng.</p>
+                <p>Phát triển giao diện website khám phá ẩm thực quốc tế, tối ưu UI/UX bằng HTML/CSS.</p>
             </div>
         </section>
 
         <section>
-            <h2 class="section-title"> Sở thích cá nhân</h2>
+            <h2 class="section-title">Sở thích cá nhân</h2>
             <ul class="hobbies-list">
-                <li>Ăn được thì ăn</li>
                 <li>Gaming</li>
                 <li>Boxing</li>
                 <li>Tìm hiểu Pokémon</li>
+                <li>Ăn uống & Trải nghiệm</li>
             </ul>
         </section>
     </div>
